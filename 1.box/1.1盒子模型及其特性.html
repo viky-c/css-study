@@ -5,9 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1.1盒子模型及其特性</title>
-    <link rel="stylesheet" href="../reset.css" />
+    <style>
+      .box1 {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        background-color: red;
+      }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        background-color: green;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <body>
-    <h1>1.1盒子模型及其特性</h1>
+    <spane>1.1盒子模型及其特性</spane>
+    <div class="box1">
+      <spane>标准盒模型: width|height = context</spane>
+    </div>
+    <div class="box2">
+      <spane>标准盒模型: width|height = context + padding + border</spane>
+    </div>
   </body>
 </html>
